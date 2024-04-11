@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
-sncast --profile testnet --wait declare --contract-name FactRegistry
+sncast --wait declare --contract-name FactRegistry

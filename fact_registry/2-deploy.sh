@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Check if the arguments are provided
 if [ $# -ne 1 ]; then
@@ -10,4 +10,4 @@ fi
 class_hash=$1
 
 # Pass the class hash to the sncast command
-sncast --profile testnet --wait deploy --class-hash "$class_hash"
+sncast --wait deploy --class-hash "$class_hash"

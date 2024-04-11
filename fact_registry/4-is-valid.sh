@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # Check if the arguments are provided
 if [ $# -ne 2 ]; then
@@ -11,7 +11,7 @@ contract_address=$1
 fact_hash=$2
 
 # Pass the calldata to the sncast command
-sncast --profile testnet \
+sncast \
   --wait \
   call \
   --contract-address "$contract_address" \
